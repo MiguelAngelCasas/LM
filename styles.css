@@ -1,0 +1,74 @@
+body{
+width: 100%;
+}
+
+.cuerpo {
+    position: relative; /* Establece la posición relativa para que el texto se posicione dentro del div */
+  }
+  
+  .cuerpo-texto {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -700%); 
+    color: #fff; 
+    font-size: 24px; 
+    text-align: center; 
+    width: 80%; 
+  }
+
+  .col-lg-4{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #a0a0a0;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .col-lg-12{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #b9b8b8;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .col-lg-4:hover{
+    transform: scale(1.1) translateY(20px);
+    transition: 1s;
+  }
+
+  /*.col-lg-12:hover{ (Victor he comentado esta transición ya que me tapa la api y no la quería borrar)
+    transform: scale(1.1) translateY(30px);
+    transition: 1s;
+  }*/
+
+@media (max-width: 1840px) {
+    .cuerpo-texto {
+        transform: translate(-50%, -500%); 
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .cuerpo-texto {
+        transform: translate(-50%, -200%); 
+    }
+
+    .multi-carousel-inner{
+        display: flex;
+        flex-direction: column;
+        width: 300%;
+    }
+  }
+
+@media (max-width: 950px) {
+    .cuerpo-texto {
+        transform: translate(-50%, -100%); 
+    }
+  }
+
+  @media (max-width: 700px) {
+    .cuerpo-texto {
+      font-size: 16px;
+    }
+  }
